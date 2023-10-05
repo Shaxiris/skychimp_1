@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h4>Рассылка <strong>{{ object.message.subject }}</strong></h4>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-borderless">
+                    <tr>
+                        <th>Получатели:</th>
+                        <td>
+                            <div style="max-height: 150px; overflow-y: auto;">
+                                <ul>
+                                    {% for recipient in object.recipients.all %}
+                                    <li>{{ recipient.name }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Начало:</th>
+                        <td>{{ object.start_time }}</td>
+                    </tr>
+                    <tr>
+                        <th>Окончание:</th>
+                        <td>{{ object.end_time }}</td>
+                    </tr>
+                    <tr>
+                        <th>Периодичность:</th>
+                        <td>{{ object.get_frequency_display }}</td>
+                    </tr>
+                    <tr>
+                        <th>Статус:</th>
+                        <td>{{ object.get_status_display }}</td>
+                    </tr>
+                    <tr>
+                        <th>Тема:</th>
+                        <td>
+                            <div class="static-textarea">{{ object.message.subject }}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Сообщение:</th>
+                        <td>
+                            <div class="static-textarea">{{ object.message.body|linebreaks }}</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'mailing:mailing_list' %}"
+                   class="btn btn-warning btn-warning-special mb-2">Вернуться к списку</a>
+                {% if user.is_superuser or is_manager %}
+                    {% if object.status != 'finished' %}
+                        <a href="{% url 'mailing:deactivate_mailing' object.pk %}" class="btn btn-warning btn-warning-special mb-2">Отключить</a>
+                    {% else %}
+                        <button class="btn btn-warning btn-warning-special mb-2" disabled>Отключить</button>
+                    {% endif %}
+                {% endif %}
+                {% if user.is_superuser or user == object.owner %}
+                    <a href="{% url 'mailing:update_mailing' object.pk %}"
+                       class="btn btn-warning btn-warning-special mb-2">Изменить</a>
+                    <a href="{% url 'mailing:delete_mailing' object.pk %}"
+                       class="btn btn-danger btn-danger-special mb-2">Удалить</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

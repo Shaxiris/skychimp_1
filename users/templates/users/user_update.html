@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 order-md-1">
+        <h4 class="mb-3 text-center">Изменение профиля</h4>
+        <div class="col-md-4 mx-auto">
+            {% if user.is_authenticated %}
+            <h5 class="text-center mb-3">{{ user.email }}</h5>
+            {% else %}
+            <h5 class="text-center mb-3">Войдите в аккаунт</h5>
+            {% endif %}
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Сохранить</button>
+                <a href="{% url 'mailing:home' %}"
+                   class="btn btn-warning btn-warning-special btn-lg btn-block">Отмена</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

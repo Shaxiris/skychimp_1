@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3 text-center">{{ title }}</h4>
+
+        <div class="col-md-4 mx-auto">
+            <form class="needs-validation" action="" method="post">
+                {% csrf_token %}
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="last_name">Фамилия</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Иванов"
+                               value="{% if object|last_name %}{{ object|last_name }}{% endif %}"
+                               required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="first_name">Имя</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Иван"
+                               value="{% if object|first_name %}{{ object|first_name }}{% endif %}"
+                               required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="father_name">* Отчество</label>
+                        <input type="text" class="form-control" id="father_name" name="father_name"
+                               placeholder="Иванович"
+                               value="{% if object|father_name %}{{ object|father_name }}{% endif %}">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    {{ form.as_p }}
+
+                    <div class="col-md-6">
+                        <span class="text-muted">* необязательные поля</span>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">{{ button }}</button>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{% url 'mailing:recipients_list' %}"
+                               class="btn btn-warning btn-warning-special btn-lg btn-block">Отмена</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3 text-center">Рассылки</h4>
+
+        <div class="container mt-5">
+
+            <div class="mb-4">
+                <a href="{% url 'mailing:new_mailing' %}" class="btn btn-primary">Создать новую рассылку</a>
+            </div>
+
+            {% for object in object_list %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ object.message.subject }}</h5>
+                    <p class="card-text"><strong>Периодичность: </strong>{{ object.get_frequency_display }}</p>
+                    <p class="card-text text-muted">Дата начала: {{ object.start_time }}</p>
+                    <p class="card-text text-muted">Дата окончания: {{ object.end_time }}</p>
+                    <p class="card-text"><strong>Статус: </strong>{{ object.get_status_display }}</p>
+                    {% if user.is_superuser or is_manager %}
+                        <br>
+                        <p class="card-text text-muted"><strong>Создан: </strong>{{ object.owner }}</p>
+                    {% endif %}
+
+                    {% if user.is_superuser or is_manager %}
+                        {% if object.status != 'finished' %}
+                            <a href="{% url 'mailing:deactivate_mailing' object.pk %}" class="btn btn-warning btn-warning-special float-right">Отключить</a>
+                        {% else %}
+                            <button class="btn btn-warning btn-warning-special float-right" disabled>Отключить</button>
+                        {% endif %}
+                    {% endif %}
+
+                    <a href="{% url 'mailing:mailing_card' object.pk %}" class="btn btn-warning btn-warning-special">Детали</a>
+                    {% if user.is_superuser or user == object.owner %}
+                        <a href="{% url 'mailing:update_mailing' object.pk %}" class="btn btn-warning btn-warning-special">Изменить</a>
+                        <a href="{% url 'mailing:delete_mailing' object.pk %}" class="btn btn-danger btn-danger-special">Удалить</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

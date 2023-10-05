@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3 text-center">Пользователи</h4>
+
+        <div class="container mt-5">
+
+            {% for object in object_list %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ object.email }}</h5>
+                    <p class="card-text"><strong>Имя: </strong>{{ object.name }}</p>
+                    <p class="card-text"><strong>Телефон: </strong>{{ object.phone }}</p>
+
+                    {% if object.is_active %}
+                        <a href="{% url 'users:deactivate_user' object.pk %}" class="btn btn-warning btn-warning-special">Заблокировать</a>
+                    {% else %}
+                        <a href="{% url 'users:deactivate_user' object.pk %}" class="btn btn-warning btn-warning-special">Разблокировать</a>
+                    {% endif %}
+
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>{{ title }}</h2>
+        <p class="lead">Пожалуйста, заполните все обязательные поля рассылки</p>
+      </div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3 text-center">Рассылка</h4>
+        <form class="needs-validation" action="" method="post" novalidate>
+            {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <hr>
+                <h5>Сообщение:</h5>
+
+                {{ message_form.as_p }}
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">{{ button }}</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{% url 'mailing:mailing_list' %}" class="btn btn-warning btn-warning-special btn-lg btn-block">Отмена</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

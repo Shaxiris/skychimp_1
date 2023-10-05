@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3 text-center">Получатели</h4>
+
+        <div class="container mt-5">
+            <div class="mb-4">
+                <a href="{% url 'mailing:new_recipient' %}" class="btn btn-primary">Создать новый</a>
+            </div>
+
+            {% for object in object_list %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ object.name }}</h5>
+                    <p class="card-text"><strong>Email:</strong> {{ object.email }}</p>
+                    <p class="card-text">{{ object.comment }}</p>
+                    {% if user.is_superuser or is_manager %}
+                        <br>
+                        <p class="card-text text-muted"><strong>Создан: </strong>{{ object.owner }}</p>
+                    {% endif %}
+
+                    {% if user.is_superuser or user == object.owner %}
+                    <a href="{% url 'mailing:update_recipient' object.pk %}"
+                       class="btn btn-warning btn-warning-special">Изменить</a>
+                    <a href="{% url 'mailing:delete_recipient' object.pk %}" class="btn btn-danger btn-danger-special">Удалить</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

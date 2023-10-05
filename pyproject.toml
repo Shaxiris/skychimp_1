@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mailing-service"
+version = "0.1.0"
+description = ""
+authors = ["Ksu <kseniyaartemova@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "mailing_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.4"
+psycopg2-binary = "^2.9.7"
+django-crontab = "^0.7.1"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

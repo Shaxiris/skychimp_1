@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Создать рассылку</h2>
+        <p class="lead">Пожалуйста, заполните все обязательные поля рассылки</p>
+    </div>
+
+    <div class="row justify-content-center position-relative mt-5">
+        <div class="col-md-6">
+            <h4 class="mb-3 text-center">Новая рассылка</h4>
+            <form class="needs-validation" action="{% url 'mailing:home' %}" method="post" novalidate>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <hr>
+                <h5>Сообщение:</h5>
+                {{ message_form.as_p }}
+                <button class="btn btn-primary btn-lg btn-block" type="submit"> {{ button }}</button>
+            </form>
+        </div>
+        {% if user.is_authenticated %}
+        <div class="position-absolute" style="right: -20%; top: 0; width: 25%;">
+            <div class="card custom-border mb-3">
+                <div class="card-header">Статистика рассылки</div>
+                <div class="card-body">
+                    <h4 class="card-title">Общая информация:</h4>
+                    <p class="card-text">
+                        <strong>Всего рассылок:</strong> {{ total_mailings }}<br>
+                        <strong>Активных рассылок:</strong> {{ active_mailings }}<br>
+                        <strong>Количество контактов:</strong> {{ unique_clients }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+            {% for object in object_list %}
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title">{{ object.title }}</h5>
+                </div>
+                <div class="card-content-wrapper">
+                    {% if object.image %}
+                    <img src="{{ object.image.url }}" alt="{{ object.title }}" class="card-image">
+                    {% endif %}
+                    <div class="card-blog-content">
+                        <div class="content-container limited-container">
+                            <p class="card-text">{{ object.content|linebreaks }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-container clear-float p-3">
+                    <span class="text-muted float-left">Дата публикации: {{ object.publication_date|date:"d.m.Y" }}</span>
+                    <span class="text-muted float-right">{{ object.views_number }} просмотров</span>
+                </div>
+                <div class="card-footer">
+                    <div class="button-container">
+                        <a href="{% url 'blog:entry_detail' object.pk %}" class="btn btn-warning btn-warning-special">Открыть
+                            запись</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

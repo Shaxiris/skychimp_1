@@ -1,0 +1,1636 @@
+[
+{
+    "model": "blog.blogentry",
+    "pk": 2,
+    "fields": {
+        "title": "Вторая запись",
+        "content": "Я решил стать гуманистом.\r\n\r\nЯ буду любить людей. Во всех их проявлениях.\r\n\r\nЯ буду переводить бабушек через дорогу - пусть они живут дольше и воспитывают своих внуков. Я буду помогать маленьким детям - они будущее этой планеты. Соседу помогу положить паркет, коллегу прикрою на работе. Родителей я буду навещать постоянно - пусть порадуются. Я буду делать подарки родственникам и друзьям, утешать незнакомых людей, улыбаться прохожим. Я хочу, чтобы всем было хорошо.\r\n\r\nЯ буду прививать свой образ жизни другим - я создам целое общество таких же как я. Буду проповедовать любовь и терпимость. Всепрощение и мир во всём мире. Мы будем жертвовать своими интересами во имя блага других людей. Создадим фонд, будем помогать безработным и бездомным, давать деньги на медицину, обучение. Мы привлечём меценатов, будем спонсировать детские дома, хосписы, центры по борьбе с неизлечимыми болезнями. Мы будем примером - и люди станут добрее.\r\n\r\nЧеловек будет помогать другому человеку - так нам не придётся сталкиваться с ужасными и глупыми проблемами вроде нищеты или голода. Матери не будут бояться за своих детей, семьи не будут опасаться заводить новых отпрысков. Пусть строятся новые города, открываются новые рабочие места, пускай ищутся способы продлить нашу жизнь и сделать её лучше. И человечество начнёт разрастаться, мы станем огромной цивилизацией, мы откроем новые источники энергии, всё станет бесплатным и качественным.\r\n\r\nНас будет десять миллиардов, нет, пятьдесят! Нет, сто миллиардов человек - мы будем поддерживать друг друга и все будем разными!\r\n\r\nИ по теории вероятности, хотя бы один из этих ста миллиардов станет психопатом, рано или поздно пришедшим к власти. И он разъебёт эту сраную планету на мириады до омерзения счастливых атомов.G\r\n\r\nТаков план.",
+        "image": "blog/image.png",
+        "views_number": 7,
+        "publication_date": "2023-09-22T11:17:48.812Z"
+    }
+},
+{
+    "model": "blog.blogentry",
+    "pk": 4,
+    "fields": {
+        "title": "Третья запись",
+        "content": "Да, третья запись",
+        "image": "blog/image.png",
+        "views_number": 5,
+        "publication_date": "2023-09-23T23:20:09.126Z"
+    }
+},
+{
+    "model": "blog.blogentry",
+    "pk": 5,
+    "fields": {
+        "title": "Блога!",
+        "content": "Записываю записи записками",
+        "image": "blog/image.png",
+        "views_number": 1,
+        "publication_date": "2023-09-25T09:30:24.009Z"
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 1,
+    "fields": {
+        "email": "kontact@mycont.ru",
+        "name": "Контактный Контакт",
+        "comment": "",
+        "owner": null
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 2,
+    "fields": {
+        "email": "dodic@yandex.ru",
+        "name": "Контактный Контакт",
+        "comment": "",
+        "owner": null
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 3,
+    "fields": {
+        "email": "s.rogulin+ai@semrush.com",
+        "name": "Новый Контакт",
+        "comment": "",
+        "owner": null
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 4,
+    "fields": {
+        "email": "ksu@sobaca.cum",
+        "name": "Новый Контакт",
+        "comment": "",
+        "owner": 3
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 5,
+    "fields": {
+        "email": "dodic@yandex.ru",
+        "name": "Аеекг Вноплл",
+        "comment": "",
+        "owner": 3
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 6,
+    "fields": {
+        "email": "kontact@mycont.ru",
+        "name": "Иванов Ванька Никитович",
+        "comment": "Ну такое",
+        "owner": 3
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 7,
+    "fields": {
+        "email": "kseniyaartemova@yandex.ru",
+        "name": "Это Я Сообщение",
+        "comment": "Отправить бы ей рассылку",
+        "owner": 3
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 8,
+    "fields": {
+        "email": "dodic@yandex.com",
+        "name": "Контактный Телефон Не Нужен",
+        "comment": "",
+        "owner": 1
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 9,
+    "fields": {
+        "email": "dodisan@yandex.ru",
+        "name": "Dgyz Вноплл Прикинь",
+        "comment": "",
+        "owner": 13
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 1,
+    "fields": {
+        "subject": "Проверка связи",
+        "body": "Откликнись, тело!"
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 2,
+    "fields": {
+        "subject": "Ну какая-то рассылка",
+        "body": "Мимо проходи"
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 3,
+    "fields": {
+        "subject": "Ну и зачем это все",
+        "body": "ЭЭЭх\r\nПисьмецо ты мое письмецо"
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 4,
+    "fields": {
+        "subject": "No subject",
+        "body": ""
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 5,
+    "fields": {
+        "subject": "No subject",
+        "body": ""
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 6,
+    "fields": {
+        "subject": "pipop",
+        "body": "purums"
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 7,
+    "fields": {
+        "subject": "pipop",
+        "body": "purums"
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 1,
+    "fields": {
+        "start_time": "2023-09-21T15:36:00Z",
+        "end_time": "2023-10-07T15:40:00Z",
+        "frequency": "daily",
+        "status": "started",
+        "updated_at": "2023-09-22T16:07:37.830Z",
+        "message": 1,
+        "owner": 3,
+        "recipients": [
+            6,
+            4,
+            7
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 2,
+    "fields": {
+        "start_time": "2023-09-21T15:40:00Z",
+        "end_time": "2023-10-06T15:40:00Z",
+        "frequency": "weekly",
+        "status": "finished",
+        "updated_at": "2023-09-25T09:30:55.985Z",
+        "message": 2,
+        "owner": 3,
+        "recipients": [
+            6,
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 3,
+    "fields": {
+        "start_time": "2023-09-21T15:41:00Z",
+        "end_time": "2024-01-31T16:41:00Z",
+        "frequency": "monthly",
+        "status": "finished",
+        "updated_at": "2023-09-25T00:43:56.825Z",
+        "message": 3,
+        "owner": 3,
+        "recipients": [
+            5,
+            6,
+            4,
+            7
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 4,
+    "fields": {
+        "start_time": "2023-10-05T15:44:00Z",
+        "end_time": "2023-11-23T16:44:00Z",
+        "frequency": "monthly",
+        "status": "finished",
+        "updated_at": "2023-09-25T00:43:45.290Z",
+        "message": 4,
+        "owner": 1,
+        "recipients": [
+            8
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 5,
+    "fields": {
+        "start_time": "2023-09-27T00:50:00Z",
+        "end_time": "2023-09-30T00:50:00Z",
+        "frequency": "weekly",
+        "status": "created",
+        "updated_at": "2023-09-25T00:50:57.801Z",
+        "message": 5,
+        "owner": 1,
+        "recipients": [
+            8
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 6,
+    "fields": {
+        "start_time": "2023-09-05T23:28:00Z",
+        "end_time": "2023-09-24T23:28:00Z",
+        "frequency": "weekly",
+        "status": "started",
+        "updated_at": "2023-09-25T09:30:01.913Z",
+        "message": 7,
+        "owner": 13,
+        "recipients": [
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 1,
+    "fields": {
+        "last_try": "2023-09-22T16:10:03.551Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 2,
+    "fields": {
+        "last_try": "2023-09-22T16:10:05.264Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 3,
+    "fields": {
+        "last_try": "2023-09-22T16:10:06.773Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 4,
+    "fields": {
+        "last_try": "2023-09-22T16:10:08.232Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 5,
+    "fields": {
+        "last_try": "2023-09-22T16:10:09.703Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 6,
+    "fields": {
+        "last_try": "2023-09-22T16:10:12.716Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 7,
+    "fields": {
+        "last_try": "2023-09-22T16:10:14.067Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 8,
+    "fields": {
+        "last_try": "2023-09-22T16:10:15.598Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 9,
+    "fields": {
+        "last_try": "2023-09-22T16:10:17.137Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 10,
+    "fields": {
+        "last_try": "2023-09-22T16:15:03.117Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 11,
+    "fields": {
+        "last_try": "2023-09-22T16:15:04.785Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 12,
+    "fields": {
+        "last_try": "2023-09-22T16:15:06.163Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 13,
+    "fields": {
+        "last_try": "2023-09-22T16:15:07.601Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 14,
+    "fields": {
+        "last_try": "2023-09-22T16:15:09.033Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 15,
+    "fields": {
+        "last_try": "2023-09-22T16:15:10.447Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 16,
+    "fields": {
+        "last_try": "2023-09-22T16:15:11.843Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 17,
+    "fields": {
+        "last_try": "2023-09-22T16:15:13.162Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 18,
+    "fields": {
+        "last_try": "2023-09-22T16:15:14.645Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 19,
+    "fields": {
+        "last_try": "2023-09-22T16:20:03.983Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 20,
+    "fields": {
+        "last_try": "2023-09-22T16:20:06.176Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 21,
+    "fields": {
+        "last_try": "2023-09-22T16:20:07.870Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 22,
+    "fields": {
+        "last_try": "2023-09-22T16:20:09.396Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 23,
+    "fields": {
+        "last_try": "2023-09-22T16:20:10.902Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 24,
+    "fields": {
+        "last_try": "2023-09-22T16:20:12.579Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 25,
+    "fields": {
+        "last_try": "2023-09-22T16:20:14.218Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 26,
+    "fields": {
+        "last_try": "2023-09-22T16:20:15.683Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 27,
+    "fields": {
+        "last_try": "2023-09-22T16:20:17.031Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 28,
+    "fields": {
+        "last_try": "2023-09-22T16:25:02.862Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 29,
+    "fields": {
+        "last_try": "2023-09-22T16:25:04.613Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 30,
+    "fields": {
+        "last_try": "2023-09-22T16:25:06.313Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 31,
+    "fields": {
+        "last_try": "2023-09-22T16:25:08.180Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 32,
+    "fields": {
+        "last_try": "2023-09-22T16:25:10.011Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 33,
+    "fields": {
+        "last_try": "2023-09-22T16:25:11.776Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 34,
+    "fields": {
+        "last_try": "2023-09-22T16:25:13.421Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 35,
+    "fields": {
+        "last_try": "2023-09-22T16:25:14.880Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 36,
+    "fields": {
+        "last_try": "2023-09-22T16:25:16.293Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 37,
+    "fields": {
+        "last_try": "2023-09-22T16:30:03.332Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 38,
+    "fields": {
+        "last_try": "2023-09-22T16:30:04.923Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 39,
+    "fields": {
+        "last_try": "2023-09-22T16:30:06.203Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 40,
+    "fields": {
+        "last_try": "2023-09-22T16:30:07.550Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 41,
+    "fields": {
+        "last_try": "2023-09-22T16:30:09.056Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 42,
+    "fields": {
+        "last_try": "2023-09-22T16:30:10.360Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 43,
+    "fields": {
+        "last_try": "2023-09-22T16:30:11.725Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 44,
+    "fields": {
+        "last_try": "2023-09-22T16:30:13.034Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 45,
+    "fields": {
+        "last_try": "2023-09-22T16:30:14.255Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 46,
+    "fields": {
+        "last_try": "2023-09-22T16:35:03.336Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 47,
+    "fields": {
+        "last_try": "2023-09-22T16:35:05.159Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 48,
+    "fields": {
+        "last_try": "2023-09-22T16:35:06.674Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 49,
+    "fields": {
+        "last_try": "2023-09-22T16:35:08.488Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 50,
+    "fields": {
+        "last_try": "2023-09-22T16:35:10.342Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 51,
+    "fields": {
+        "last_try": "2023-09-22T16:35:12.258Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 52,
+    "fields": {
+        "last_try": "2023-09-22T16:35:14.081Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 53,
+    "fields": {
+        "last_try": "2023-09-22T16:35:16.010Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 54,
+    "fields": {
+        "last_try": "2023-09-22T16:35:17.446Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 55,
+    "fields": {
+        "last_try": "2023-09-22T16:40:04.214Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 56,
+    "fields": {
+        "last_try": "2023-09-22T16:40:06.440Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 57,
+    "fields": {
+        "last_try": "2023-09-22T16:40:08.360Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 58,
+    "fields": {
+        "last_try": "2023-09-22T16:40:09.896Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 59,
+    "fields": {
+        "last_try": "2023-09-22T16:40:11.645Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 60,
+    "fields": {
+        "last_try": "2023-09-22T16:40:12.983Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 61,
+    "fields": {
+        "last_try": "2023-09-22T16:40:14.409Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 62,
+    "fields": {
+        "last_try": "2023-09-22T16:40:15.899Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 63,
+    "fields": {
+        "last_try": "2023-09-22T16:40:17.285Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 64,
+    "fields": {
+        "last_try": "2023-09-22T16:45:03.419Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 65,
+    "fields": {
+        "last_try": "2023-09-22T16:45:04.804Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 66,
+    "fields": {
+        "last_try": "2023-09-22T16:45:06.297Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 67,
+    "fields": {
+        "last_try": "2023-09-22T16:45:07.698Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 68,
+    "fields": {
+        "last_try": "2023-09-22T16:45:09.127Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 69,
+    "fields": {
+        "last_try": "2023-09-22T16:45:10.425Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 70,
+    "fields": {
+        "last_try": "2023-09-22T16:45:11.948Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 71,
+    "fields": {
+        "last_try": "2023-09-22T16:45:13.385Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 72,
+    "fields": {
+        "last_try": "2023-09-22T16:45:14.894Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 73,
+    "fields": {
+        "last_try": "2023-09-22T16:50:03.241Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 74,
+    "fields": {
+        "last_try": "2023-09-22T16:50:05.060Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 75,
+    "fields": {
+        "last_try": "2023-09-22T16:50:07.070Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 76,
+    "fields": {
+        "last_try": "2023-09-22T16:50:08.890Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 77,
+    "fields": {
+        "last_try": "2023-09-22T16:50:10.304Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 78,
+    "fields": {
+        "last_try": "2023-09-22T16:50:11.629Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 79,
+    "fields": {
+        "last_try": "2023-09-22T16:50:13.381Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 80,
+    "fields": {
+        "last_try": "2023-09-22T16:50:15.432Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 81,
+    "fields": {
+        "last_try": "2023-09-22T16:50:17.371Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 82,
+    "fields": {
+        "last_try": "2023-09-22T16:55:03.670Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 83,
+    "fields": {
+        "last_try": "2023-09-22T16:55:04.889Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 84,
+    "fields": {
+        "last_try": "2023-09-22T16:55:06.097Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 85,
+    "fields": {
+        "last_try": "2023-09-22T16:55:07.378Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 86,
+    "fields": {
+        "last_try": "2023-09-22T16:55:08.707Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 87,
+    "fields": {
+        "last_try": "2023-09-22T16:55:10.185Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 88,
+    "fields": {
+        "last_try": "2023-09-22T16:55:11.805Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 89,
+    "fields": {
+        "last_try": "2023-09-22T16:55:13.470Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 90,
+    "fields": {
+        "last_try": "2023-09-22T16:55:14.947Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 91,
+    "fields": {
+        "last_try": "2023-09-22T17:00:03.249Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 92,
+    "fields": {
+        "last_try": "2023-09-22T17:00:04.581Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 93,
+    "fields": {
+        "last_try": "2023-09-22T17:00:06.218Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 94,
+    "fields": {
+        "last_try": "2023-09-22T17:00:07.793Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 95,
+    "fields": {
+        "last_try": "2023-09-22T17:00:09.532Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 96,
+    "fields": {
+        "last_try": "2023-09-22T17:00:10.910Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 97,
+    "fields": {
+        "last_try": "2023-09-22T17:00:12.395Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 98,
+    "fields": {
+        "last_try": "2023-09-22T17:00:13.865Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 99,
+    "fields": {
+        "last_try": "2023-09-22T17:00:15.293Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 100,
+    "fields": {
+        "last_try": "2023-09-22T17:05:04.255Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 101,
+    "fields": {
+        "last_try": "2023-09-22T17:05:06.015Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 102,
+    "fields": {
+        "last_try": "2023-09-22T17:05:07.857Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 103,
+    "fields": {
+        "last_try": "2023-09-22T17:05:09.693Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 104,
+    "fields": {
+        "last_try": "2023-09-22T17:05:11.426Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 105,
+    "fields": {
+        "last_try": "2023-09-22T17:05:12.876Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 106,
+    "fields": {
+        "last_try": "2023-09-22T17:05:14.295Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 107,
+    "fields": {
+        "last_try": "2023-09-22T17:05:15.831Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 108,
+    "fields": {
+        "last_try": "2023-09-22T17:05:17.382Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 109,
+    "fields": {
+        "last_try": "2023-09-22T17:10:04.066Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 110,
+    "fields": {
+        "last_try": "2023-09-22T17:10:05.502Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 111,
+    "fields": {
+        "last_try": "2023-09-22T17:10:06.698Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 112,
+    "fields": {
+        "last_try": "2023-09-22T17:10:08.132Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 113,
+    "fields": {
+        "last_try": "2023-09-22T17:10:09.505Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 2
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 114,
+    "fields": {
+        "last_try": "2023-09-22T17:10:10.825Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 5,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 115,
+    "fields": {
+        "last_try": "2023-09-22T17:10:12.282Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 116,
+    "fields": {
+        "last_try": "2023-09-22T17:10:14.359Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 117,
+    "fields": {
+        "last_try": "2023-09-22T17:10:15.705Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 3
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 118,
+    "fields": {
+        "last_try": "2023-09-23T22:10:06.179Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 119,
+    "fields": {
+        "last_try": "2023-09-23T22:10:07.410Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 120,
+    "fields": {
+        "last_try": "2023-09-23T22:10:10.021Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 121,
+    "fields": {
+        "last_try": "2023-09-24T22:40:15.703Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 6,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 122,
+    "fields": {
+        "last_try": "2023-09-24T22:40:17.562Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.log",
+    "pk": 123,
+    "fields": {
+        "last_try": "2023-09-24T22:40:19.634Z",
+        "status": "successful",
+        "server_response": null,
+        "client": 7,
+        "mailing": 1
+    }
+}
+]

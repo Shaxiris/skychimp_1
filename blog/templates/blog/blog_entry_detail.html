@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 order-md-1">
+        <div class="container mt-5">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title">{{ object.title }}</h5>
+                </div>
+                <div class="card-content-wrapper">
+                    {% if object.image %}
+                    <img src="{{ object.image.url }}" alt="{{ object.title }}" class="card-image">
+                    {% endif %}
+                    <div class="card-blog-content">
+                        <div class="content-container">
+                            <p class="card-text">{{ object.content|linebreaks }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-container clear-float p-3">
+                    <span class="text-muted float-left">Дата публикации: {{ object.publication_date|date:"d.m.Y" }}</span>
+                    <span class="text-muted float-right">{{ object.views_number }} просмотров</span>
+                </div>
+                <div class="card-footer">
+                    <div class="button-container">
+                        <a href="{{ referer }}" class="btn btn-warning btn-warning-special">Вернуться</a>
+                        {% if user.is_superuser or is_manager %}
+                            <a href="{% url 'blog:update_entry' object.pk %}" class="btn btn-warning btn-warning-special">Изменить</a>
+                            <a href="{% url 'blog:delete_entry' object.pk %}" class="btn btn-danger btn-danger-special">Удалить</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

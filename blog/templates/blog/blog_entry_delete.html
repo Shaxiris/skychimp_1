@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="center-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 content-box">
+                <h2 class="text-center">Подтвердите удаление</h2>
+                <p class="text-center">Вы уверены, что хотите удалить запись </p>
+                <p class="text-center">
+                    "<strong>{{ object.title }}</strong>" ?</p>
+                <form method="post" action="" class="text-center mt-4">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-danger btn-danger-special px-2 mr-2" type="submit">Удалить</button>
+                        <a href="{% url 'blog:blog_entry_list' %}" class="btn btn-warning btn-warning-special px-2">Отмена</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
